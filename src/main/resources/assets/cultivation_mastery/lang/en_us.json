@@ -1,0 +1,9 @@
+{
+  "item.cultivation_mastery.yin_yang": "Yin Yang",
+
+  "block.cultivation_mastery.trainer": "Trainer",
+  "tooltip.cultivation_mastery.trainer.tooltip.1": "Punch to train your body in Martial Arts Cultivation",
+  "tooltip.cultivation_mastery.trainer.tooltip.2": "Shift Right Click to break",
+
+  "itemgroup.cultivation": "Cultivation"
+}
