@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#cultivation_mastery:low_level_spirit_stone_ores",
+    "#cultivation_mastery:medium_level_spirit_stone_ores",
+    "#cultivation_mastery:high_level_spirit_stone_ores"
+  ]
+}

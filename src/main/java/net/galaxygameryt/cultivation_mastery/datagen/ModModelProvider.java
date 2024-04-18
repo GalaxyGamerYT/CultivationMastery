@@ -15,8 +15,29 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-//        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TRAINER);
-        blockStateModelGenerator.registerSimpleState(ModBlocks.TRAINER);
+        blockStateModelGenerator.registerDoubleBlock(ModBlocks.OAK_TRAINING_POST,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerDoubleBlock(ModBlocks.SPRUCE_TRAINING_POST,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerDoubleBlock(ModBlocks.BIRCH_TRAINING_POST,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerDoubleBlock(ModBlocks.JUNGLE_TRAINING_POST,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerDoubleBlock(ModBlocks.ACACIA_TRAINING_POST,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerDoubleBlock(ModBlocks.DARK_OAK_TRAINING_POST,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerDoubleBlock(ModBlocks.MANGROVE_TRAINING_POST,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerDoubleBlock(ModBlocks.CHERRY_TRAINING_POST,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LOW_LEVEL_SPIRIT_STONE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_LOW_LEVEL_SPIRIT_STONE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MEDIUM_LEVEL_SPIRIT_STONE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_MEDIUM_LEVEL_SPIRIT_STONE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.HIGH_LEVEL_SPIRIT_STONE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_HIGH_LEVEL_SPIRIT_STONE_ORE);
     }
 
     @Override

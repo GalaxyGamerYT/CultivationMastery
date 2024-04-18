@@ -1,9 +1,24 @@
 {
   "item.cultivation_mastery.yin_yang": "Yin Yang",
 
-  "block.cultivation_mastery.trainer": "Trainer",
-  "tooltip.cultivation_mastery.trainer.tooltip.1": "Punch to train your body in Martial Arts Cultivation",
-  "tooltip.cultivation_mastery.trainer.tooltip.2": "Shift Right Click to break",
+  "block.cultivation_mastery.oak_training_post": "Oak Training Post",
+  "block.cultivation_mastery.spruce_training_post": "Spruce Training Post",
+  "block.cultivation_mastery.birch_training_post": "Birch Training Post",
+  "block.cultivation_mastery.jungle_training_post": "Jungle Training Post",
+  "block.cultivation_mastery.acacia_training_post": "Acacia Training Post",
+  "block.cultivation_mastery.dark_oak_training_post": "Dark Oak Training Post",
+  "block.cultivation_mastery.mangrove_training_post": "Mangrove Training Post",
+  "block.cultivation_mastery.cherry_training_post": "Cherry Training Post",
+
+  "block.cultivation_mastery.low_level_spirit_stone_ore": "Low Level Spirit Stone Ore",
+  "block.cultivation_mastery.deepslate_low_level_spirit_stone_ore": "Deepslate Low Level Spirit Stone Ore",
+  "block.cultivation_mastery.medium_level_spirit_stone_ore": "Medium Level Spirit Stone Ore",
+  "block.cultivation_mastery.deepslate_medium_level_spirit_stone_ore": "Deepslate Medium Level Spirit Stone Ore",
+  "block.cultivation_mastery.high_level_spirit_stone_ore": "High Level Spirit Stone Ore",
+  "block.cultivation_mastery.deepslate_high_level_spirit_stone_ore": "Deepslate High Level Spirit Stone Ore",
+
+  "tooltip.cultivation_mastery.training_post.tooltip.1": "Punch to train your body in Martial Arts Cultivation",
+  "tooltip.cultivation_mastery.training_post.tooltip.2": "Shift Right Click to break",
 
   "itemgroup.cultivation": "Cultivation"
 }
