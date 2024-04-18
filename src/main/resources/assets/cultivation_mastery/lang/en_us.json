@@ -20,5 +20,8 @@
   "tooltip.cultivation_mastery.training_post.tooltip.1": "Punch to train your body in Martial Arts Cultivation",
   "tooltip.cultivation_mastery.training_post.tooltip.2": "Shift Right Click to break",
 
+  "tooltip.cultivation_mastery.yin_yang.tooltip.1": "The essence of §6§l§o§kBALANCE",
+  "tooltip.cultivation_mastery.yin_yang.tooltip.2": "The essence of §6§l§oBALANCE",
+
   "itemgroup.cultivation": "Cultivation"
 }
