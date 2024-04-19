@@ -1,5 +1,6 @@
 {
   "item.cultivation_mastery.yin_yang": "Yin Yang",
+  "item.cultivation_mastery.mandala": "Mandala",
 
   "block.cultivation_mastery.oak_training_post": "Oak Training Post",
   "block.cultivation_mastery.spruce_training_post": "Spruce Training Post",
@@ -20,8 +21,27 @@
   "tooltip.cultivation_mastery.training_post.tooltip.1": "Punch to train your body in Martial Arts Cultivation",
   "tooltip.cultivation_mastery.training_post.tooltip.2": "Shift Right Click to break",
 
-  "tooltip.cultivation_mastery.yin_yang.tooltip.1": "The essence of §6§l§o§kBALANCE",
-  "tooltip.cultivation_mastery.yin_yang.tooltip.2": "The essence of §6§l§oBALANCE",
+  "tooltip.cultivation_mastery.essences.tooltip.1": "The essence of §k§l§o",
+  "tooltip.cultivation_mastery.essences.tooltip.2": "The essence of §l§o§",
 
-  "itemgroup.cultivation": "Cultivation"
+  "tooltip.cultivation_mastery.yin_yang.tooltip": "§6BALANCE",
+  "tooltip.cultivation_mastery.mandala.tooltip": "§2HEAVEN AND EARTH",
+
+  "tooltip.cultivation_mastery.yin_yang.tooltip.1": "The essence of §6§k§l§oBALANCE§r",
+  "tooltip.cultivation_mastery.yin_yang.tooltip.2": "The essence of §6§l§oBALANCE§r",
+  "tooltip.cultivation_mastery.mandala.tooltip.1": "The essence of §2§l§o§kHEAVEN AND EARTH§r",
+  "tooltip.cultivation_mastery.mandala.tooltip.2": "The essence of §2§l§oHEAVEN AND EARTH§r",
+
+  "itemgroup.cultivation": "Cultivation",
+
+  "message.cutivation_mastery.body_increase": "Body cultivation increased",
+
+  "text.autoconfig.cultivation_mastery.title": "Cultivation Mastery Config",
+
+  "text.autoconfig.cultivation_mastery.category.general": "General",
+  "text.autoconfig.cultivation_mastery.category.debug": "Debug",
+
+  "text.autoconfig.cultivation_mastery.option.debug.essenceTooltipToggle": "Essence Tooltip Toggle",
+
+  "text.autoconfig.cultivation_mastery.option.debug.essenceTooltipToggle.@Tooltip": "Controls if you can see the unknown text on the tooltips for the essence items"
 }

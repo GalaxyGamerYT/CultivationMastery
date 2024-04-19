@@ -3,7 +3,8 @@
 	"package": "net.galaxygameryt.cultivation_mastery.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"ModEntityDataServerMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

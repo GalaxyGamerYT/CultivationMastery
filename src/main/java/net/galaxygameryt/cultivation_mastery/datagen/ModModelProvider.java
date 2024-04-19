@@ -43,5 +43,6 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.YIN_YANG, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MANDALA, Models.GENERATED);
     }
 }

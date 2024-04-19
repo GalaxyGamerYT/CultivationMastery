@@ -2,17 +2,19 @@ package net.galaxygameryt.cultivation_mastery.block.custom;
 
 import com.mojang.serialization.MapCodec;
 import net.minecraft.block.*;
-import net.minecraft.block.enums.DoubleBlockHalf;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.state.property.Properties;
+import net.minecraft.text.Style;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
 import net.minecraft.util.function.BooleanBiFunction;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
@@ -57,16 +59,28 @@ public class TrainingPostBlock extends TallPlantBlock {
     }
 
     @Override
-    public ActionResult onUse(BlockState state, World world, BlockPos pos,
-                              PlayerEntity player, Hand hand, BlockHitResult hit) {
+    public void appendTooltip(ItemStack stack, @Nullable BlockView world, List<Text> tooltip, TooltipContext options) {
+        tooltip.add(Text.translatable("tooltip.cultivation_mastery.training_post.tooltip.1"));
+        tooltip.add(Text.translatable("tooltip.cultivation_mastery.training_post.tooltip.2"));
+        super.appendTooltip(stack, world, tooltip, options);
+    }
+
+    @Override
+    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+        if (!world.isClient()) {
+            if (player.isSneaking()) {
+                world.breakBlock(pos, true);
+            }
+        }
 
         return ActionResult.SUCCESS;
     }
 
     @Override
-    public void appendTooltip(ItemStack stack, @Nullable BlockView world, List<Text> tooltip, TooltipContext options) {
-        tooltip.add(Text.translatable("tooltip.cultivation_mastery.training_post.tooltip.1"));
-        tooltip.add(Text.translatable("tooltip.cultivation_mastery.training_post.tooltip.2"));
-        super.appendTooltip(stack, world, tooltip, options);
+    public void onBlockBreakStart(BlockState state, World world, BlockPos pos, PlayerEntity player) {
+        super.onBlockBreakStart(state, world, pos, player);
+        if (world.isClient()) {
+            player.sendMessage(Text.literal("Training Post Used").fillStyle(Style.EMPTY.withColor(Formatting.DARK_AQUA)), false);
+        }
     }
 }

@@ -15,6 +15,9 @@ public class ModItemGroups {
             new Identifier(CultivationMastery.MOD_ID, "cultivation"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.cultivation"))
                     .icon(() -> new ItemStack(ModItems.YIN_YANG)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.YIN_YANG);
+                        entries.add(ModItems.MANDALA);
+
                         entries.add(ModBlocks.OAK_TRAINING_POST);
                         entries.add(ModBlocks.SPRUCE_TRAINING_POST);
                         entries.add(ModBlocks.BIRCH_TRAINING_POST);

@@ -23,6 +23,12 @@
 		],
 		"fabric-datagen": [
 			"net.galaxygameryt.cultivation_mastery.CultivationMasteryDataGenerator"
+		],
+		"rei_client": [
+			"net.galaxygameryt.cultivation_mastery.compat.ModREIClientPlugin"
+		],
+		"modmenu": [
+			"net.galaxygameryt.cultivation_mastery.compat.ModMenuIntegration"
 		]
 	},
 	"mixins": [
